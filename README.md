@@ -15,29 +15,35 @@
 
 ## 📖 Overview
 
-**Quikr Used Car Market Analysis** is an end-to-end Exploratory Data Analysis (EDA) project built using Python. The project focuses on cleaning real-world used car data, exploring pricing trends, identifying market patterns, and generating meaningful business insights through data visualization.
+**Quikr Used Car Market Analysis** is an end-to-end **Exploratory Data Analysis (EDA)** project developed using **Python**. The project focuses on cleaning real-world used car data, exploring pricing trends, understanding market behavior, and extracting actionable business insights through data visualization.
+
+This project demonstrates a complete data analysis workflow, including **data cleaning, preprocessing, exploratory analysis, visualization, and insight generation**.
 
 ---
 
 ## 🎯 Objectives
 
-- Clean and preprocess raw automobile data
+- Clean messy real-world automobile data
 - Handle missing and inconsistent values
-- Analyze factors affecting used car prices
-- Explore market trends through visualization
-- Generate business insights
-- Prepare data for Machine Learning
+- Explore factors affecting used car prices
+- Analyze market trends through visualization
+- Generate meaningful business insights
+- Prepare data for future Machine Learning models
 
 ---
 
 ## 📂 Dataset Features
 
-- Car Name
-- Company
-- Year
-- Price
-- Kilometers Driven
-- Fuel Type
+The dataset contains information about used cars listed on **Quikr**.
+
+| Feature | Description |
+|---------|-------------|
+| Car Name | Name of the vehicle |
+| Company | Manufacturer |
+| Year | Manufacturing Year |
+| Price | Selling Price |
+| Kilometers Driven | Distance covered |
+| Fuel Type | Petrol / Diesel / LPG |
 
 ---
 
@@ -56,8 +62,15 @@
 
 ## 📁 Repository Structure
 
-```
+```text
 quikr-used-car-analysis/
+│
+├── images/
+│   ├── 01_company_price_distribution.png
+│   ├── 02_price_vs_manufacturing_year.png
+│   ├── 03_price_vs_kms_driven.png
+│   ├── 04_fuel_type_vs_price.png
+│   └── 05_company_fuel_price_analysis.png
 │
 ├── Quikr_Analysis.ipynb
 ├── quikr_car.csv
@@ -70,9 +83,9 @@ quikr-used-car-analysis/
 
 ---
 
-## 🔄 Workflow
+## 🔄 Project Workflow
 
-```
+```text
 Raw Dataset
       │
       ▼
@@ -100,47 +113,91 @@ The project includes:
 - ✅ Data Cleaning
 - ✅ Missing Value Handling
 - ✅ Duplicate Removal
-- ✅ Price Analysis
+- ✅ Data Type Conversion
 - ✅ Company-wise Analysis
-- ✅ Fuel Type Analysis
 - ✅ Manufacturing Year Analysis
-- ✅ Kilometer Driven Analysis
-- ✅ Price vs Year Visualization
-- ✅ Price vs Kilometers Driven Visualization
+- ✅ Fuel Type Analysis
+- ✅ Kilometers Driven Analysis
+- ✅ Price Distribution Analysis
+- ✅ Price vs Manufacturing Year
+- ✅ Price vs Kilometers Driven
+- ✅ Company-wise Price Comparison
+
+---
+
+## 📸 Project Visualizations
+
+### 1️⃣ Company-wise Price Distribution
+
+Comparison of resale prices across different automobile manufacturers.
+
+![Company Price Distribution](images/01_company_price_distribution.png)
+
+---
+
+### 2️⃣ Price vs Manufacturing Year
+
+Shows how manufacturing year influences the resale price of used cars.
+
+![Price vs Manufacturing Year](images/02_price_vs_manufacturing_year.png)
+
+---
+
+### 3️⃣ Price vs Kilometers Driven
+
+Illustrates the relationship between kilometers driven and selling price.
+
+![Price vs Kilometers Driven](images/03_price_vs_kms_driven.png)
+
+---
+
+### 4️⃣ Fuel Type vs Price
+
+Comparison of resale prices across Petrol, Diesel, and LPG vehicles.
+
+![Fuel Type vs Price](images/04_fuel_type_vs_price.png)
+
+---
+
+### 5️⃣ Company, Fuel Type & Price Analysis
+
+Combined visualization showing the influence of company, fuel type, and manufacturing year on vehicle prices.
+
+![Company Fuel Price Analysis](images/05_company_fuel_price_analysis.png)
 
 ---
 
 ## 📈 Key Insights
 
-- Premium car brands retain higher resale values.
-- Vehicle age significantly impacts resale price.
-- Lower mileage vehicles generally have higher market value.
-- Fuel type influences pricing trends.
-- Data cleaning greatly improves analysis accuracy.
+- Premium automobile brands generally retain higher resale values.
+- Vehicle age has a significant impact on resale price.
+- Cars with lower mileage tend to have higher market value.
+- Diesel vehicles generally command higher resale prices than Petrol and LPG vehicles.
+- Proper data cleaning significantly improves the quality of analysis.
 
 ---
 
 ## 🚀 Installation
 
-Clone the repository:
+### Clone the Repository
 
 ```bash
 git clone https://github.com/naitik2043/quikr-used-car-analysis.git
 ```
 
-Move into the project directory:
+### Navigate to the Project
 
 ```bash
 cd quikr-used-car-analysis
 ```
 
-Install dependencies:
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook:
+### Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -148,49 +205,72 @@ jupyter notebook
 
 Open:
 
-```
+```text
 Quikr_Analysis.ipynb
 ```
 
----
-
-## 📸 Project Preview
-
-> Add screenshots of your visualizations here.
-
-Example:
-
-```
-images/
-├── price_distribution.png
-├── company_distribution.png
-├── fuel_type_analysis.png
-└── correlation_heatmap.png
-```
+and run all cells.
 
 ---
 
 ## 📌 Future Enhancements
 
-- Car Price Prediction using Machine Learning
-- Streamlit Web Application
-- Interactive Dashboard
-- Model Performance Comparison
-- Advanced Feature Engineering
+- 🤖 Car Price Prediction using Machine Learning
+- 📊 Interactive Dashboard using Plotly
+- 🌐 Streamlit Web Application
+- 📈 Feature Importance Analysis
+- 🔍 Model Performance Comparison
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create your feature branch.
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to the branch.
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request.
 
 ---
 
 ## 👨‍💻 Author
 
-**Naitik Gupta**
+### Naitik Gupta
 
-- 🔗 GitHub: https://github.com/naitik2043
 - 💼 LinkedIn: https://www.linkedin.com/in/naitikgupta2043
+- 🐙 GitHub: https://github.com/naitik2043
 
 ---
 
-## ⭐ Show Your Support
+## ⭐ Support
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
-It motivates me to build more open-source Data Science projects.
+Your support motivates me to build more open-source Data Science projects.
+
+---
+
+<p align="center">
+
+### 🚀 Happy Coding & Happy Learning!
+
+Made with ❤️ using **Python**, **Pandas**, **NumPy**, **Matplotlib**, and **Seaborn**.
+
+</p>
